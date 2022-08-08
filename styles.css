@@ -1,0 +1,853 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    margin-top:  -0.1%;
+}
+
+@media screen and (max-width:760px){
+	li{
+        padding-top: -20px;
+        
+	} 
+}
+
+
+.menusup {
+    display: flex;
+    position: relative;
+    padding-top: 1%;
+    padding-right: 10%;
+    /*Envia los elementos al final del flex*/
+    justify-content: flex-end;
+}
+
+@media (max-width:845px){
+	.menusup{
+        padding-right: 5px;
+        
+	} 
+}
+
+@media (max-width:595px){
+	.menusup{
+        padding-right: 80%;
+        
+	} 
+}
+
+@media (max-width:770px){
+	.menusup li a{
+        font-size: 10px;
+        
+	} 
+}
+
+@media screen and (max-width:760px){
+	.menusup {
+		padding-right: 5px;
+        
+	} 
+}
+
+/*Para corregir sobre posición de menu, amplia banner
+@media screen and (max-width:510px){
+	.menusup {
+		padding-top: 30px;
+        
+	} 
+}*/
+
+@media screen and (max-width:580px){
+	.menusup {
+		padding-right: 2px;
+        
+	} 
+}
+
+@media screen and (max-width:730px){
+	.menusup {
+		padding-top: 5px;
+        
+	} 
+}
+
+@media screen and (max-width:640px){
+	.menusup {
+		padding-top: 0.1px;
+        
+	} 
+}
+
+ul {
+    list-style: none;
+    /* background-color: #003789; */
+    background-color:#133A81
+    
+}
+
+@media screen and (max-width:340px){
+	ul {
+		padding-top: 0px;
+        /* padding-bottom: 40px; */
+        
+	} 
+}
+
+li {
+    margin: 10px;
+}
+
+li a{
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media screen and (max-width:590px){
+	li a {
+		font-size: 8px;
+        
+	} 
+}
+
+@media screen and (max-width:450px){
+	li a {
+		font-size: 9px;
+        
+	} 
+}
+
+@media screen and (max-width:375px){
+	li a {
+		font-size: 8px;
+        
+	} 
+}
+
+@media screen and (max-width:575px){
+	li {
+		margin: 5px;
+        
+	} 
+}
+
+
+@media screen and (max-width:375px){
+	li {
+		margin: 5px;
+        
+	} 
+}
+
+li ul {
+    display: none;
+}
+
+.lineatiempo {
+    /* width: 100vh; */
+    display: flex;
+
+}
+
+.izquierda {
+    width: 15%;
+    /* background-color: aquamarine; */
+}
+
+.centro {
+    width: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.saludo {
+    display: flex;
+}
+
+.conmargen {
+    width: 50%;
+    display: flex;
+    border-right: solid;
+    border-width: thin;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.conmargen p {
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 220px;
+    color: #003789;
+}
+
+.sinmargen {
+    width: 50%;
+    display: flex;
+    /*Centra los elementos horizontalmente*/
+    justify-content: center;
+    /*Centra los elementos verticalmente*/
+    align-items: center;
+    
+}
+
+.sinmargen p {
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+    padding-left: 20%;
+    font-size: 36px;
+    color: #1e1e1e;
+}
+
+.sinmargen a{
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0072bc;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 15px;
+}
+
+.derecha {
+    width: 15%;
+    /* background-color: aquamarine; */
+}
+
+@media screen and (max-width:1500px){
+	.conmargen p {
+		font-size:80%; /* achicamos la fuente en pantallas pequeñas */
+	} 
+}
+
+@media screen and (max-width:1190px){
+	.conmargen p {
+		padding-right:50%;
+	} 
+}
+
+@media screen and (max-width:1060px){
+	.conmargen p {
+		font-size:70%;
+	} 
+}
+
+@media screen and (max-width:1060px){
+	.sinmargen {
+		font-size:15px;
+	} 
+}
+
+
+@media screen and (max-width:900px){
+	.conmargen p {
+		font-size:60%;
+	} 
+}
+
+@media screen and (max-width:900px){
+	.sinmargen p {
+		font-size:10%;
+	} 
+}
+
+@media screen and (max-width:890px){
+	.conmargen p {
+		padding-right: 10%;
+}
+}
+@media screen and (max-width:1500px){
+	.sinmargen p {
+		font-size: 150%;; /* achicamos la fuente en pantallas pequeñas */
+	} 
+}
+
+/*Menor a 365*/
+@media screen and (max-width:365px){
+	.conmargen p {
+		font-size: 14px; /* achicamos la fuente en pantallas pequeñas */
+	} 
+}
+
+@media screen and (max-width:365px){
+	.sinmargen p {
+		font-size: 70%; /* achicamos la fuente en pantallas pequeñas */
+        margin-left: 2%;
+        margin-right: 10%;
+        width: 80%;
+	} 
+}
+
+@media screen and (max-width:365px){
+	.sinmargen p a{
+		font-size: 70%; /* achicamos la fuente en pantallas pequeñas */
+        /* margin-left: 12%; */
+        /* margin-right: 10%; */
+        width: 80%;
+	} 
+}
+
+@media screen and (max-width:365px){
+	.sinmargen p {
+		padding-left: 60%;; /* achicamos la fuente en pantallas pequeñas */
+	} 
+}
+
+/*Fin Menor a 365*/
+
+/*Menor a 500*/
+@media screen and (max-width:500px){
+	.conmargen p {
+		font-size: 14px; /* achicamos la fuente en pantallas pequeñas */
+	} 
+}
+
+@media screen and (max-width:500px){
+	.sinmargen p {
+		font-size: 70%; /* achicamos la fuente en pantallas pequeñas */
+        margin-left: 2%;
+        margin-right: 10%;
+        width: 80%;
+	} 
+}
+
+@media screen and (max-width:500px){
+	.sinmargen p a{
+		font-size: 70%; /* achicamos la fuente en pantallas pequeñas */
+        /* margin-left: 12%; */
+        /* margin-right: 10%; */
+        width: 80%;
+	} 
+}
+
+@media screen and (max-width:500px){
+	.sinmargen p {
+		padding-left: 60%;; /* achicamos la fuente en pantallas pequeñas */
+	} 
+}
+
+/*Fin Menor a 500*/
+
+@media screen and (max-width:1100px){
+	.conmargen p {
+		/* font-size:60%; // achicamos la fuente en pantallas pequeñas */
+        padding-right: 40%;
+	} 
+}
+
+@media screen and (max-width:780px){
+	.conmargen p {
+		/* font-size:60%; // achicamos la fuente en pantallas pequeñas */
+        padding-right: 30%;
+	} 
+}
+
+.diauno {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly
+}
+
+@media screen and (max-width:400px){
+	.diauno h3 {
+		font-size: 110%; /* achicamos la fuente en pantallas pequeñas */
+	} 
+    .diatres h3 {
+		font-size: 110%; /* achicamos la fuente en pantallas pequeñas */
+	} 
+}
+
+@media screen and (max-width:460px){
+	.diauno h3 {
+		font-size: 120%; /* achicamos la fuente en pantallas pequeñas */
+
+	} 
+    .diatres h3 {
+		font-size: 120%; /* achicamos la fuente en pantallas pequeñas */
+
+	} 
+ 
+}
+
+.dia {
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #003789;
+    text-align: left;
+    margin-bottom: 18px;
+    padding-top: 50px;
+    
+    }
+    h3 {
+        font-family: Montserrat, sans-serif;
+        font-size: 28px;
+        /* text-align: center; */
+        font-weight: bold;
+        color: #1e1e1e;
+        margin-bottom: 18px;
+        }
+
+.miparrafito {
+         font-family: 'Montserrat', sans-serif;
+         font-weight: 400;
+        font-size: 28px;
+        color: #1e1e1e;
+ }
+
+ .miparrafito a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:600;
+    background-color: #0072bc;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:510px){
+	.miparrafito a{
+		padding-left: 25px;
+        padding-right: 25px;
+        
+	} 
+}
+
+@media screen and (max-width:320px){
+	.miparrafito a{
+		padding-left: 18px;
+        padding-right: 18px;
+        
+	} 
+}
+
+.imagendia {
+    width: 70%;
+    margin-left: 10%;
+}
+
+.pdescripciondia {
+    width: 30%;
+}
+
+@media screen and (max-width:1250px){
+	.miparrafito {
+		font-size:120%;
+        
+	} 
+}
+
+@media screen and (max-width:950px){
+	.miparrafito {
+		font-size:100%;
+        
+	} 
+}
+
+@media screen and (max-width:835px){
+	.miparrafito {
+		font-size:90%;
+        
+	} 
+}
+
+@media screen and (max-width:635px){
+	.miparrafito {
+		font-size:80%;
+        
+	} 
+}
+
+@media screen and (max-width:603px){
+	.miparrafito {
+		font-size:70%;
+        
+	} 
+}
+
+@media screen and (max-width:571px){
+	.miparrafito {
+		font-size:60%;
+        
+	} 
+}
+
+@media screen and (max-width:538px){
+	.miparrafito {
+		font-size:50%;
+        
+	} 
+}
+
+@media screen and (max-width:1180px){
+	.dia {
+		font-size:180%;
+        
+	} 
+}
+
+@media screen and (max-width:840px){
+	.dia {
+		font-size:160%;
+        
+	} 
+}
+
+@media screen and (max-width:840px){
+	.descripciondia {
+		width: 50%;
+        
+	} 
+}
+
+@media screen and (max-width:840px){
+	.imagendia {
+		width: 50%;
+        
+	} 
+}
+
+@media screen and (max-width:597px){
+	.dia {
+		font-size:140%;
+        
+	} 
+}
+
+@media screen and (max-width:522px){
+	.dia {
+		font-size:120%;
+        
+	} 
+}
+
+.zeparador1 {
+    height:150px;
+    width: 50%;
+    border-right: solid;
+    border-width: thin;
+    }
+
+@media screen and (max-width:500px){
+        .zeparador1 {
+            height: 100px;
+            
+        } 
+    
+}
+
+    /* Inico estilos del segundo día */
+.diados {
+    display: flex;
+    align-items: center;
+    }
+
+.imagendia2 {
+        width: 70%;
+        margin-right: 5%;
+}
+
+.pdescripciondia2 {
+    width: 30%;
+}
+
+@media screen and (max-width:460px){
+	.diados h3 {
+		font-size: 110%;
+        
+	} 
+
+}
+
+/*Fin dia dos*/
+@media screen and (max-width:420px){
+	.izquierda {
+		width: 5%;
+        
+	} 
+    .derecha {
+		width: 5%;
+        
+	} 
+    .centro {
+		width: 90%;
+        
+	} 
+}
+
+.diatres {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    /* justify-content: center; */
+    }
+
+.pdescripciondia3 {
+        width: 30%;
+}
+
+.imagendia3 {
+    width: 70%;
+    margin-left: 5%;
+    padding-left: 10%;
+}
+
+/*Estilos sexto div*/
+.p1_6todiv {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #1e1e1e;
+    text-align: center;	
+    }
+    
+    .sextodiv {
+        display: flex;
+        flex-direction: column;
+    margin-bottom: 80px;
+    align-items: center;
+    /* justify-content: center; */
+    /* align-content: center; */
+    }
+    
+    .p2_6todiv {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #1e1e1e;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 60px;
+    }
+
+    .a6todiv {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        background-color: #0072bc;
+        border-radius: 25px;
+        /* margin-top: 50px; */
+        /* margin-left: 45%; */
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+
+/*Inicio Que encontraras*/
+.qencontraras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#0072bc, #133A81);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    }
+    .titleqencontraras {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 60px;
+    }
+    
+    .unoencontraras {
+    padding-top: 30px;
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom:10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* padding-left: 40%;
+    padding-right: 40%; */
+    
+    }
+
+    .dosencontraras {
+        padding-top: 30px;
+        display: flex;
+        margin-bottom: 10px;
+        padding-bottom:10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        /* padding-left: 40%;
+        padding-right: 40%; */
+        
+        }
+    
+    .titleitem {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffffff;
+    }
+    
+    .parrafoitem {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    }
+
+.tomate {
+        margin-right: 100px;
+        width: 33%;
+        }
+        
+.tomate2 {
+            margin-right: 100px;
+            width: 13%;
+            }
+
+@media screen and (max-width:955px){
+            .qencontraras .unoencontraras img{
+                width: 20%;
+                
+            } 
+            .qencontraras .dosencontraras img{
+                width: 20%;
+                
+            } 
+        }
+
+@media screen and (max-width:958px){
+            .qencontraras .unoencontraras p{
+                   font-size: 90%;
+                    
+                }
+            .qencontraras .unoencontraras .titleitem{
+                font-size: 190%;
+            }
+            .qencontraras .dosencontraras p{
+                    font-size: 90%;
+                     
+                 }
+            .qencontraras .dosencontraras .titleitem{
+                    font-size: 190%;
+                }
+                
+            .qencontraras .titleqencontraras {
+                    font-size: 150%;
+                     
+                 }
+        }
+
+@media screen and (max-width:792px){
+            .qencontraras .unoencontraras p{
+                   font-size: 60%;
+                    
+                }
+            .qencontraras .unoencontraras .titleitem{
+                font-size: 160%;
+            }
+            .qencontraras .dosencontraras p{
+                    font-size: 60%;
+                     
+                 }
+            .qencontraras .dosencontraras .titleitem{
+                    font-size: 160%;
+                }
+                
+            .qencontraras .titleqencontraras {
+                    font-size: 120%;
+                     
+                 }
+        }
+
+/* Acá voy con fondo azul */
+@media screen and (max-width:694px){
+            .qencontraras .unoencontraras p{
+                   font-size: 60%;
+                    
+                }
+            .qencontraras .unoencontraras .titleitem{
+                font-size: 160%;
+            }
+            .qencontraras .dosencontraras p{
+                    font-size: 60%;
+                     
+                 }
+            .qencontraras .dosencontraras .titleitem{
+                    font-size: 160%;
+                }
+                
+            .qencontraras .titleqencontraras {
+                    font-size: 120%;
+                     
+                 }
+        }
+
+
+.pfinal {
+            margin-top: 60px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 36px;
+            color: #1e1e1e;
+            text-align: center;
+ }
+            
+ .tesperamos {
+            margin-top: 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 50px;
+            color: #003789;
+            text-align: center;
+ }
+
+ @media screen and (max-width:800px){
+	.sextodiv .p1_6todiv {
+		font-size:190%; /* achicamos la fuente en pantallas pequeñas */
+	} 
+    .sextodiv .p2_6todiv {
+		font-size:140%; /* achicamos la fuente en pantallas pequeñas */
+	}
+    .septimodiv .pfinal {
+		font-size:190%; /* achicamos la fuente en pantallas pequeñas */
+	} 
+
+    .septimodiv .tesperamos {
+		font-size:190%; /* achicamos la fuente en pantallas pequeñas */
+	} 
+}
+
+@media screen and (max-width:450px){
+	.sextodiv .p1_6todiv {
+		font-size:150%; /* achicamos la fuente en pantallas pequeñas */
+	} 
+    .sextodiv .p2_6todiv {
+		font-size:100%; /* achicamos la fuente en pantallas pequeñas */
+	}
+}
+
+ .divfinal {
+    height: 200px;
+    /*background-color: yellow;*/
+    }
